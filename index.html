@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>PWA Introduction</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,180 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section data-markdown>
+          <script type="text/template">
+            ### A Lightning Fast Introduction to PWA's
+
+            or: a brief history of modern music
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/markdown">
+            Follow along:  
+            https://warbrett.github.io/pwa-lightning-talk
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ###whoami  
+            Brett Warner  
+            Software Consultant   
+            Owns Spin Development([spindevelopment.com.com](https://spindevelopment.com))  
+            [github.com/warbrett](https://www.github.com/warbrett)  
+            Writes a lot of web applications
+            Never goes on Twitter([@brett_warner](https://twitter.com/@brett_warner))  
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The year was 1992
+            * Nirvana was changing music forever.
+            * Kurt Cobain was still alive.
+            * And a small organization put the first website on the internet
+            Note: It didn't have midi music, spinning skull gifs, frames or even pictures. This was a website
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## First Site
+
+            ![Image of Cern Site](img/cern.png)
+             CERN Pic here
+          Note: The next several years were explosive, websites received images, colors, and a lot of the things that make them more modern. But the next big thing didn't happen until...
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The Year was 1996
+            * Kurt Cobain had died two years earlier
+            * There was a new sound gracing the airwaves.
+            * The Macarena
+            * Also: CSS was released and JavaScript was created.
+          Note: Something much more modern, easier to dance to, so easy to dance to that it would become everyone's most dreaded moment at every wedding going forward
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The year was 2005
+              * We still had to do the Macarena awkwardly at large social gatherings.
+              * Kayne had just dropped Gold Digger, 50 Cent was still relevant.
+              * And people still openly said that they liked Coldplay.
+              * The term Responsive had just been coined
+            Note: Now responsive sites had actually been around much longer, with the fist being a demo by Audi in 2001. But it wasn't until 2010 that we had a good word for them. Anyone remember the other words for responsive sites? Fluid, Elastic, annoying to make. 
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The year was 2010
+              * Popular music was good again.
+              * Ke$ha, Katy Perry, Justin Bieber, Bruno Mars, and Jason Derulo were among the top hits.
+              * The term Responsive had just been coined
+            Note: Now responsive sites had actually been around much longer, with the fist being a demo by Audi in 2001. But it wasn't until 2010 that we had a good word for them. Anyone remember the other words for responsive sites? Fluid, Elastic, annoying to make. 
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The year is 2018
+            * Popular music is a little more bipolar than it was 8 years ago
+            * Billboard top hits as of January 4th Have everything from Lil Pump and Cardi B to Taylor Swift and Becky G
+            * We now have progressive enhancements.
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## So what are Progresive Web Applications
+            * They're websites
+            * They take advantage of some new API's and browser features
+            * Available offline(Service Worker), Secure(https), Responsive, Web App Manifest, and Non-blocking page transitions
+          Note: these features combined give the site's some really cool advatnages, for example the ability to be added to the home screen on phones, instant  app-like feel
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Service Worker?
+            * Basically a magical little fairy(Browser APIs) that allows you to:
+            * Cache Data
+            * Do background syncing
+            * Push Notifications
+            * and more!
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Web App Manifest
+            * Really simple file you link from the head of your html document.
+            * Baasically a list of your site's settings
+            * How to display on mobile
+            * Icon
+            * etc
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Web App Manifest
+            ```
+{
+  "short_name": "AirHorner",
+  "name": "Kinlan's AirHorner of Infamy",
+  "start_url": "index.html?launcher=true",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+}
+            ```
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Examples
+            * Twitter lighte
+            * Lyft
+            * pokedex.org
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Who's it for
+            * Most sites would benefit from these features
+            * Some sites a little less - Brochure sites, Local restuarant that just sohws a menu
+            * Some sites a lot more - web based CRMs, social networks, anything with a login page anything where marketing tells you to make an "app"
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## What's in the future
+            * Microsoft automatically adding sites that are PWA's the window's store
+            * Chrome has them fully implemented on mobile
+            * Mobile Firefox will with their next few updates
+            * Safari is actively working on it.
+            Note: Important to note that all of these things are enhancements, the websites shouldn't break if a browser A is lacking a few features compaored to browser B.
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">j
+            ## Additional Resources
+            * https://developers.google.com/web/progressive-web-apps/
+            * https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/
+            * Mobile Firefox will with their next few updates
+            * Safari is actively working on it.
+            Note: Important to note that all of these things are enhancements, the websites shouldn't break if a browser A is lacking a few features compaored to browser B.
+          </script>
+        </section>
 			</div>
 		</div>
 
@@ -33,9 +205,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
