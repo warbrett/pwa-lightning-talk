@@ -7,11 +7,11 @@
 		<title>PWA Introduction</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -27,7 +27,7 @@
 			<div class="slides">
         <section data-markdown>
           <script type="text/template">
-            ### A Lightning Fast Introduction to PWA's
+            ## A Lightning Fast Introduction to Progressive Web Applications
 
             or: a brief history of modern music
           </script>
@@ -40,10 +40,10 @@
         </section>
         <section data-markdown>
           <script type="text/template">
-            ##whoami  
+            ## whoami  <!-- {_class="bkw-classy-blue"} -->
             Brett Warner  
             Software Consultant   
-            Owns Spin Development([spindevelopment.com.com](https://spindevelopment.com))  
+            Owns Spin Development([spindevelopment.com](https://spindevelopment.com))  
             [github.com/warbrett](https://www.github.com/warbrett)  
             Writes a lot of web applications  
             Never goes on Twitter([@brett_warner](https://twitter.com/@brett_warner))  
@@ -82,9 +82,9 @@
             ## The year was 2005
             * We still had to do the Macarena awkwardly at weddings.<!-- .element: class="fragment" data-fragment-index="1" -->
             * Kayne had just dropped Gold Digger, 50 Cent was still relevant.<!-- .element: class="fragment" data-fragment-index="2" -->
-            * And people still openly said that they liked Coldplay.<!-- .element: class="fragment" data-fragment-index="3" -->
-            * The term Responsive had just been coined.<!-- .element: class="fragment" data-fragment-index="4" -->
-            Note: Song on bullet 3, say on bullet 4: Now responsive sites had actually been around much longer, with the fist being a demo by Audi in 2001. But it wasn't until 2010 that we had a good word for them. Anyone remember the other words for responsive sites? Fluid, Elastic, annoying to make. 
+            * And people still openly admitted that they liked Coldplay.<!-- .element: class="fragment" data-fragment-index="3" -->
+            * AJAX became a top hit..<!-- .element: class="fragment" data-fragment-index="4" -->
+            Note: Song on bullet 3, say on bullet 4: AJAX stands for Asynchronous JavaScript and XML, that's right we used to use XML. Basically it was just using javascript to fetch data and live update the page without requiring someone to hit the refresh button or navigate to a new view. This was groundbreaking.
           </script>
         </section>
         <section data-markdown>
@@ -100,7 +100,7 @@
           <script type="text/template">
             ## The year is 2018
             * Popular music is a little more bipolar than it was 8 years ago.<!-- .element: class="fragment" data-fragment-index="1" -->
-            * Billboard top hits as of January 4th Have everything from Lil Pump and Cardi B to Taylor Swift and Becky G.<!-- .element: class="fragment" data-fragment-index="2" -->
+            * Billboard top hits as of January 4th have everything from Lil Pump and Cardi B to Taylor Swift and Becky G.<!-- .element: class="fragment" data-fragment-index="2" -->
             * We now have progressive enhancements.<!-- .element: class="fragment" data-fragment-index="3" -->
             Note: Music after first bullet
           </script>
@@ -111,13 +111,13 @@
             * They're websites.<!-- .element: class="fragment" data-fragment-index="1" -->
             * They take advantage of some new API's and browser features.<!-- .element: class="fragment" data-fragment-index="2" -->
             * Available offline(Service Worker), Secure(https), Responsive, Web App Manifest, and Non-blocking page transitions.<!-- .element: class="fragment" data-fragment-index="3" -->
-            Note: these features combined give the site's some really cool advatnages, for example the ability to be added to the home screen on phones, instant  app-like feel
+            Note: these features combined give the sites some really cool advantages, for example the ability to be added to the home screen on phones, instant app-like feel. So lets go over a few them
           </script>
         </section>
         <section data-markdown>
           <script type="text/template">
             ## Service Worker?
-            * Basically a magical little fairy(Browser APIs) that allows you to:<!-- .element: class="fragment" data-fragment-index="1" -->
+            * Basically a magical little fairy(JavaScript Browser APIs) that allows you to:<!-- .element: class="fragment" data-fragment-index="1" -->
             * Cache Data<!-- .element: class="fragment" data-fragment-index="2" -->
             * Do background syncing<!-- .element: class="fragment" data-fragment-index="3" -->
             * Push Notifications<!-- .element: class="fragment" data-fragment-index="4" -->
@@ -128,7 +128,7 @@
           <script type="text/template">
             ## Web App Manifest
             * Really simple file you link from the head of your html document.<!-- .element: class="fragment" data-fragment-index="1" -->
-            * Baasically a list of your site's settings.<!-- .element: class="fragment" data-fragment-index="2" -->
+            * Basically a list of your site's settings.<!-- .element: class="fragment" data-fragment-index="2" -->
             * How to display on mobile.<!-- .element: class="fragment" data-fragment-index="3" -->
             * Icon<!-- .element: class="fragment" data-fragment-index="4" -->
             * etc<!-- .element: class="fragment" data-fragment-index="5" -->
@@ -167,17 +167,17 @@
         <section data-markdown>
           <script type="text/template">
             ## Examples
-            * Twitter lighte
+            * Twitter light
             * Lyft
             * pokedex.org
           </script>
         </section>
         <section data-markdown>
           <script type="text/template">
-            ## Who's it for
+            ## Who is it for?
             * Most sites would benefit from these features<!-- .element: class="fragment" data-fragment-index="1" -->
-            * Some sites a little less - Brochure sites, Local restuarant that just sohws a menu<!-- .element: class="fragment" data-fragment-index="2" -->
-            * Some sites a lot more - web based CRMs, social networks, anything with a login page anything where marketing tells you to make an "app"<!-- .element: class="fragment" data-fragment-index="3" -->
+            * Some sites benefit a little less - Brochure sites, Local restuarant that just shows a menu<!-- .element: class="fragment" data-fragment-index="2" -->
+            * Some sites benefit a lot more - web based CRMs, social networks, anything with a login page anything where marketing tells you to make an "app"<!-- .element: class="fragment" data-fragment-index="3" -->
           </script>
         </section>
         <section data-markdown>
@@ -192,11 +192,17 @@
         </section>
         <section data-markdown>
           <script type="text/template">
+            ## What Should you be doing
+            * Remember these features are available<!-- .element: class="fragment" data-fragment-index="1" -->
+            * If you're creating a site that needs to be used frequently on mobile take advatange of them.<!-- .element: class="fragment" data-fragment-index="2" -->
+            * Don't think of a PWA as some completely new thing. It's just a better way to build a website<!-- .element: class="fragment" data-fragment-index="3" -->
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
             ## Additional Resources
             * https://developers.google.com/web/progressive-web-apps/
             * https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/
-            * Mobile Firefox will with their next few updates
-            * Safari is actively working on it.
             Note: Important to note that all of these things are enhancements, the websites shouldn't break if a browser A is lacking a few features compaored to browser B.
           </script>
         </section>
